@@ -1,14 +1,12 @@
 using LiteDB;
+using Tacklebox.Api.Configuration;
 using Tacklebox.Api.Persistence.Database;
 using Tacklebox.Api.Persistence.Entities;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// LiteDb
-{
-    builder.Services.AddSingleton<ILiteDatabase>(_ => new LiteDatabase("tacklebox.db"));
-    builder.Services.AddScoped<IWebhookRepository, WebhookRepository>();
-}
+
+builder.UseLiteDb();
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
