@@ -9,11 +9,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="26c1fc5c-9be6-4468-a14e-031ad326c742" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tacklebox.Api/Persistence/Database/BaseRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tacklebox.Api/Persistence/Database/WebhookRepository.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Tacklebox.Api/Persistence/Entities/WebhookEntity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tacklebox.sln" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Tacklebox.Api/Configuration/LiteDb.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tacklebox.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.tacklebox/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.tacklebox/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tacklebox.Api/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Tacklebox.Api/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tacklebox.Api/Tacklebox.Api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Tacklebox.Api/Tacklebox.Api.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tacklebox.Api/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Tacklebox.Api/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tacklebox.Api/tacklebox-log.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tacklebox.Api/tacklebox.db" beforeDir="false" afterPath="$PROJECT_DIR$/Tacklebox.Api/tacklebox.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +27,25 @@
     <option name="firstShow" value="false" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "duivos"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/duivos/tacklebox.git",
+    "accountId": "38dc4d90-bd72-422b-b094-2659aa683938"
+  }
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock:///AIAssistantSnippet.." root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///AIAssistantSnippet.." root0="SKIP_HIGHLIGHTING" />
@@ -34,11 +54,18 @@
     <setting file="mock:///AIAssistantSnippet.." root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///AIAssistantSnippet.." root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///AIAssistantSnippet.." root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///AIAssistantSnippet.." root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///AIAssistantSnippet.." root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///AIAssistantSnippet.." root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///AIAssistantSnippet.." root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///AIAssistantSnippet.." root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/74012b958fcc45cfa90d6855b44c81c57ca00/20/c1a8b3ad/ConnectionString.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/74012b958fcc45cfa90d6855b44c81c57ca00/3a/78a72fed/LiteDatabase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/74012b958fcc45cfa90d6855b44c81c57ca00/3c/9c0278e1/LiteEngine.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ce37be1a06b16c6faa02038d2cc477dd3bca5b217ceeb41c5f2ad45c1bf9/ServiceProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Tacklebox.Api/Abstractions/Interfaces/IWebhookRepository.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 4
 }]]></component>
@@ -56,7 +83,9 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "XThreadsFramesViewSplitterKey": "0.5858896",
+    "git-widget-placeholder": "feature/litedb",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -105,16 +134,37 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1752022490130</updated>
-      <workItem from="1752022494449" duration="2555000" />
+      <workItem from="1752022494449" duration="3251000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial">
+      <option name="closed" value="true" />
+      <created>1752025189114</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1752025189116</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add initial project setup with LiteDB integration&#10;&#10;- Created basic project structure for `Tacklebox.Api`.&#10;- Added LiteDB integration and repositories (`IBaseRepository`, `IWebhookRepository`).&#10;- Configured app settings and launch profiles.&#10;- Implemented basic API endpoints for webhook operations.&#10;- Added `BaseEntity` and `WebhookEntity` for entity definitions.&#10;- Configured OpenAPI for development environment.">
+      <option name="closed" value="true" />
+      <created>1752025225873</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1752025225873</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Initial" />
+    <MESSAGE value="Add initial project setup with LiteDB integration&#10;&#10;- Created basic project structure for `Tacklebox.Api`.&#10;- Added LiteDB integration and repositories (`IBaseRepository`, `IWebhookRepository`).&#10;- Configured app settings and launch profiles.&#10;- Implemented basic API endpoints for webhook operations.&#10;- Added `BaseEntity` and `WebhookEntity` for entity definitions.&#10;- Configured OpenAPI for development environment." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add initial project setup with LiteDB integration&#10;&#10;- Created basic project structure for `Tacklebox.Api`.&#10;- Added LiteDB integration and repositories (`IBaseRepository`, `IWebhookRepository`).&#10;- Configured app settings and launch profiles.&#10;- Implemented basic API endpoints for webhook operations.&#10;- Added `BaseEntity` and `WebhookEntity` for entity definitions.&#10;- Configured OpenAPI for development environment." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
